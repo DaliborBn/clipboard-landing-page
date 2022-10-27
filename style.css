@@ -238,12 +238,18 @@ h3 {
   margin-top: 13%;
 }
 h4 {
+  margin-top: 22%;
+}
+h4 a {
   color: var(--dark-grayish-blue);
   font-weight: 400;
   font-size: 1.7rem;
-  margin-top: 22%;
+  text-decoration: none;
 }
-#menu h4:nth-child(1) {
+h4 a:hover {
+  color: var(--strong-cyan);
+}
+#menu h4 a:nth-child(1) {
   margin-top: 0;
 }
 .social {
@@ -256,7 +262,7 @@ h4 {
   margin-top: 12%;
   margin-bottom: 12%;
 }
-.social img:nth-child(2) {
+.social a:nth-child(2) {
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -507,10 +513,6 @@ h4 {
     font-size: 1.6rem;
     margin-top: 0;
   }
-  h4:hover {
-    color: var(--strong-cyan);
-    cursor: pointer;
-  }
   .social {
     display: flex;
     flex-direction: row;
@@ -522,11 +524,11 @@ h4 {
     margin-bottom: 0;
     margin-left: auto;
   }
-  .social img:nth-child(2) {
+  .social a:nth-child(2) {
     margin-left: 2rem;
     margin-right: 2rem;
   }
-  .social img:hover {
+  .social a:hover {
     filter: invert(57%) sepia(55%) saturate(441%) hue-rotate(121deg) brightness(89%) contrast(89%);
     cursor: pointer;
 }
