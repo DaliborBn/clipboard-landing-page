@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flex-col-cent {
+  @apply flex flex-col justify-center items-center
+}
+.default-section {
+  @apply text-center mt-32 px-7 sl:px-16 md:max-w-[1100px]
+}
+p {
+  @apply text-base text-grayish-blue font-normal leading-6 mt-5 md:text-xl 
+}
+.btn {
+  @apply text-lg text-white w-full font-semibold px-2 py-3 rounded-full overflow-hidden md:py-4
+}
+.btn-cyan {
+  @apply bg-strong-cyan shadow-mainShadow shadow-cyanShadow transition-all ease-out duration-300 hover:bg-cyanShadow
+}
+.btn-blue {
+  @apply bg-light-blue shadow-mainShadow shadow-blueShadow mt-8 transition-all ease-out duration-300 hover:bg-blueShadow md:mt-0 md:ml-5 
+}
+h2 {
+  @apply text-[24px] text-dark-gb text-center font-semibold leading-9 md:text-4xl 
+}
+.flex-col-left {
+  @apply mt-12 md:items-start md:text-left
+}
+h3 {
+  @apply text-2xl text-center font-semibold md:text-[1.5rem] text-dark-gb 
+}
+#companies > img {
+  @apply mt-16 md:mt-0 md:w-[15%]
+}
+#companies > img:first-child {
+  @apply mt-0
+}
+#footer-menu > h4 {
+  @apply text-xl text-dark-gb font-normal mt-7 transition-all ease-out duration-300 hover:text-strong-cyan md:mt-0 md:text-sm lg:text-base
+}
+#footer-menu > h4:first-child {
+  @apply mt-0
+}
+#social a:hover {
+  transition: all ease-out 0.3s;
+  filter: invert(57%) sepia(55%) saturate(441%) hue-rotate(121deg) brightness(89%) contrast(89%);
+}
+.hover-img {
+  @apply transition ease-in-out duration-500 hover:scale-105
+}
