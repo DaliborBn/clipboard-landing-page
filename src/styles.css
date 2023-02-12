@@ -11,7 +11,7 @@
   @apply text-center mt-32 px-7 sl:px-16 md:max-w-[1100px]
 }
 p {
-  @apply text-base text-grayish-blue font-normal leading-6 mt-5 md:text-xl 
+  @apply text-base text-grayish-blue font-normal leading-6 mt-5 md:text-[1.15rem] 
 }
 .btn {
   @apply text-lg text-white w-full font-semibold px-2 py-3 rounded-full overflow-hidden md:py-4
@@ -29,7 +29,7 @@ h2 {
   @apply mt-12 md:items-start md:text-left
 }
 h3 {
-  @apply text-2xl text-center font-semibold md:text-[1.5rem] text-dark-gb 
+  @apply text-2xl text-center font-semibold md:text-[1.35rem] text-dark-gb 
 }
 #companies > img {
   @apply mt-16 md:mt-0 md:w-[15%]
