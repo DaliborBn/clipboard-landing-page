@@ -626,9 +626,9 @@ video {
   background-color: rgb(249 246 246 / var(--tw-bg-opacity));
 }
 
-.bg-slate-800{
+.bg-white{
   --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/img\/bg-header-mobile\.png\'\)\]{
@@ -725,8 +725,7 @@ p{
 
 @media (min-width: 768px){
   p{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 1.15rem;
   }
 }
 
@@ -836,7 +835,7 @@ h3{
 
 @media (min-width: 768px){
   h3{
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 }
 
