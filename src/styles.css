@@ -43,9 +43,12 @@ h3 {
 #footer-menu > h4:first-child {
   @apply mt-0
 }
-#social a:hover {
+#social img:hover {
   filter: invert(57%) sepia(55%) saturate(441%) hue-rotate(121deg) brightness(89%) contrast(89%);
 }
 .hover-img {
   @apply transition ease-in-out duration-500 hover:scale-105
+}
+.social-transition {
+  @apply transition ease-in-out duration-300
 }
