@@ -892,7 +892,6 @@ h3{
 }
 
 #social a:hover {
-  transition: all ease-out 0.3s;
   filter: invert(57%) sepia(55%) saturate(441%) hue-rotate(121deg) brightness(89%) contrast(89%);
 }
 
