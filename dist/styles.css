@@ -649,8 +649,8 @@ video {
   padding-right: 1.75rem;
 }
 
-.pl-\[15\%\]{
-  padding-left: 15%;
+.pl-\[20\%\]{
+  padding-left: 20%;
 }
 
 .pr-\[20\%\]{
@@ -718,6 +718,30 @@ p{
 @media (min-width: 768px){
   p{
     font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 600px){
+  .paragrapf-460{
+    max-width: 460px;
+  }
+}
+
+@media (min-width: 768px){
+  .paragrapf-460{
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 600px){
+  .paragrapf-full{
+    max-width: 460px;
+  }
+}
+
+@media (min-width: 768px){
+  .paragrapf-full{
+    max-width: 100%;
   }
 }
 
@@ -883,22 +907,8 @@ h3{
   margin-top: 0px;
 }
 
-#social img:hover {
-  filter: invert(57%) sepia(55%) saturate(441%) hue-rotate(121deg) brightness(89%) contrast(89%);
-}
-
-.hover-img{
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hover-img:hover{
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+#social a {
+  color: hsl(210, 10%, 33%);
 }
 
 .social-transition{
@@ -907,6 +917,26 @@ h3{
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (hover: hover) {
+  #social a:hover {
+    color: hsl(171, 66%, 44%);
+  }
+
+  .hover-img{
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-img:hover{
+    --tw-scale-x: 1.05;
+    --tw-scale-y: 1.05;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
 }
 
 @media (min-width: 480px){
@@ -929,9 +959,20 @@ h3{
   }
 }
 
+@media (min-width: 600px){
+  .bmd\:max-w-\[460px\]{
+    max-width: 460px;
+  }
+}
+
 @media (min-width: 768px){
   .md\:m-0{
     margin: 0px;
+  }
+
+  .md\:mx-4{
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .md\:-ml-\[3\%\]{
@@ -998,6 +1039,14 @@ h3{
     max-width: 600px;
   }
 
+  .md\:max-w-\[80\%\]{
+    max-width: 80%;
+  }
+
+  .md\:max-w-full{
+    max-width: 100%;
+  }
+
   .md\:grid-flow-col{
     grid-auto-flow: column;
   }
@@ -1048,14 +1097,13 @@ h3{
     padding-right: 0px;
   }
 
-  .md\:px-4{
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .md\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .md\:pl-\[15\%\]{
+    padding-left: 15%;
   }
 
   .md\:text-left{
