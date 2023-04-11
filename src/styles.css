@@ -13,6 +13,12 @@
 p {
   @apply text-base text-grayish-blue font-normal leading-6 mt-5 md:text-[1.15rem] 
 }
+.paragrapf-460 {
+  @apply bmd:max-w-[460px] md:max-w-[80%]
+}
+.paragrapf-full {
+  @apply bmd:max-w-[460px] md:max-w-full
+}
 .btn {
   @apply text-lg text-white w-full font-semibold px-2 py-3 rounded-full overflow-hidden md:py-4
 }
@@ -43,12 +49,18 @@ h3 {
 #footer-menu > h4:first-child {
   @apply mt-0
 }
-#social img:hover {
-  filter: invert(57%) sepia(55%) saturate(441%) hue-rotate(121deg) brightness(89%) contrast(89%);
-}
-.hover-img {
-  @apply transition ease-in-out duration-500 hover:scale-105
+#social a {
+  color: hsl(210, 10%, 33%);
 }
 .social-transition {
   @apply transition ease-in-out duration-300
+}
+
+@media (hover: hover) {
+  #social a:hover {
+    color: hsl(171, 66%, 44%);
+  }
+  .hover-img {
+    @apply transition ease-in-out duration-500 hover:scale-105
+  }
 }
