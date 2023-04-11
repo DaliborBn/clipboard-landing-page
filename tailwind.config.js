@@ -7,7 +7,8 @@ module.exports = {
         bai: ['Bai Jamjuree']
       },
       screens: {
-        'sl': '480px'
+        'sl': '480px',
+        'bmd': '600px'
       },
       colors: {
         'strong-cyan': 'hsl(171, 66%, 44%)',
